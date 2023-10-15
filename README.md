@@ -8,7 +8,7 @@
 
 
 
-- [Demo Project](https://alinajafiweb.github.io/FlexMenu/)
+- [Demo Project](https://alinajafiweb.github.io/verticalMenu/)
 
 - Developed by Ali Najafi
 
