@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: gainsboro;
+    display: flex;
+}
+
+main>div {
+    width: 40%;
+    /* border: 2px solid black; */
+    height: 100%;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    /* background-color: wheat ; */
+}
+
+main>div>h1 {
+    font-size: 75px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 20px  rgb(0, 255, 106);
+    
+}
+
+main>nav {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+main>nav>ul {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+
+main>nav>ul>li {
+    width: 100%;
+    height: 50px;
+    transition: 1s;
+    /* border: 2px solid white; */
+}
+
+main>nav>ul>li>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+main>nav>ul>li:nth-of-type(odd) {
+    border-bottom: 2px solid purple;
+}
+
+main>nav>ul>li:nth-of-type(odd):hover {
+    background-color: rgba(128, 0, 128, 0.507);
+}
+main>nav>ul>li:nth-of-type(even) {
+    border-bottom: 2px solid wheat;
+}
+
+main>nav>ul>li:nth-of-type(even):hover {
+    background-color: rgba(245, 222, 179, 0.534);
+}
+
+main>nav>ul>li>ul {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 0;
+    height: 100%;
+    background-color: purple;
+    overflow: hidden;
+    transition: 1s;
+}
+
+main>nav>ul>li:hover ul {
+    width: 300px;
+}
+
+main>nav>ul>li>ul>li {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main>nav>ul>li>ul>li>ul {
+    width: 100%;
+    
+
+}
+
+main>nav>ul>li>ul>li>ul>li {
+    border-bottom: 2px solid white;
+    padding: 25px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+main>nav>ul>li>ul>li>ul>li:hover {
+    background-color: wheat;
+    color: black;
+
+}
